@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  mysql_tara:
+    image: mysql:8.3
+    container_name: tarabase
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=tarabase
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_TCP_PORT=3306
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+volumes:
+  db-data:
