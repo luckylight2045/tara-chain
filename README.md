@@ -2,7 +2,9 @@
 
 1.docker compose up
 
-2.npm run start
+2.npm install
+
+3.npm run start
 
 
 
